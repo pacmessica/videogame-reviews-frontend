@@ -26,7 +26,7 @@ class Categories extends React.Component {
 
   render() {
     return (
-      <div class="Categories">
+      <div className="Categories">
         <h1>Categories!</h1>
         <ul>
           {this.state.categories.map(function(category) {
