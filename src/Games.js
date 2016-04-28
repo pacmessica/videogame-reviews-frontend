@@ -26,6 +26,8 @@ class Games extends React.Component {
   }
 
   render() {
+    let id = this.props.params.categoryId
+
     return (
       <div className="games">
         <h1>Games!</h1>
@@ -33,7 +35,7 @@ class Games extends React.Component {
           {this.state.games.map(function(game) {
             return(
               <li key={game.id}>
-                <Link to={`/games/${game.id}`}>{game.title}</Link>
+                <Link to={`categories/${id}/games/${game.id}`}>{game.title}</Link>
               </li>
             );
           })}
