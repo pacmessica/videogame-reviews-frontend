@@ -24,6 +24,7 @@ class Categories extends React.Component {
     });
   }
 
+
   render() {
     return (
       <div className="Categories">
@@ -32,7 +33,7 @@ class Categories extends React.Component {
           {this.state.categories.map(function(category) {
             return(
               <li key={category.id}>
-                <Link to={`/categories/${category.id}`}>{category.name}</Link>
+                <Link to={`/categories/${category.id}`} name={category.name}>{category.name}</Link>
               </li>
             );
           })}
